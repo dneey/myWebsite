@@ -1,0 +1,31 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+
+  .example-form {
+    /* min-width: 150px; */
+    /* max-width: 500px; */
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .right-content {
+    /* border-left: dashed; */
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.primary-color-background {
+  /* background-color: rgb(58, 122, 185); */
+  background-color: #F46B30;
+  color: white; 
+}
+

@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@font-face {
+    font-family: lato;
+    src: url(assets/fonts/lato/Lato-Hairline.ttf) format("opentype");
+  }
+  .intro{
+    font-family: Lato;
+    font-weight: 100;
+    font-style: inherit;
+    font-size: 300%
+    
+}
+  .intro-small{
+    font-family: Lato;
+    font-weight: 100;
+    font-style: inherit;
+    font-size: 200%
+    
+}
+.separator{
+    /* border-top: solid; */
+    margin-top: 5%;
+    margin-bottom: 7%;
+    border-top-color: rgba(235, 231, 231, 0.815)
+}

@@ -1,0 +1,18 @@
+<div class="column right">
+    <div class="right-content">
+        <h1 class="intro"><br>  <strong>Send Me A Message</strong>,<br> <br></h1><br>
+        <!-- <p class="sub-intro">I work everyday in Laravel and Lumen. I occassionally write code in node js and angular</p> -->
+        <div class="example-container">
+            <mat-form-field>
+              <input matInput placeholder="Enter your email" [formControl]="email" required>
+              <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
+            </mat-form-field>
+<br>
+            <mat-form-field class="example-full-width">
+              <textarea matInput placeholder="Enter Your Message" [(ngModel)]="message" ></textarea>
+            </mat-form-field>
+
+            <button mat-button class="primary-color-background" (click)="sendEmail()">SEND</button>
+          </div>
+    </div>
+  </div>
