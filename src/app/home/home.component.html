@@ -1,45 +1,75 @@
-
-<h1 class="text-center intro">Hey there...</h1>
-<br>
-<div class="card bg-info text-light text-center">
-<h1 class="intro">
-   <br> I'm David Yartey,</h1>
-            <br><p class="intro-small"> Full-Stack web developer with over 2 years of development in Laravel PHP, Angular and Express JS </p>
-  
+<!-- <div class="row">
+    <h1 class="intro-small col">Hey there...</h1>
+</div> -->
 
 <br>
-<div class="separator"></div>
-<div class="row">
-    <div class="circle col">Laravel</div>
-    <div class="circle col">Node Js</div>
-    <div class="circle col">Angular</div>
-    <div class="circle col">PHP</div>
-    <div class="circle col">Lumen</div>
-    <div class="circle col">Rabbit MQ</div>
-    <div class="circle col">Redis</div>
-</div><br>
 
+<div class="card bg-info text-light text-center"><br>
+  <p class="intro align-items-center">Hey there,</p>
+
+    <h1 class="intro-large">
+
+      <strong>I'm David Yartey</strong>
+    </h1>
+    <br>
+    <div class="intro-sub align-items-center">
+    <p> 
+        pan-Af·ri·can Web developer with over 2 years of experience building APIS in Laravel and PHP. </p><p>I occassionally dabble in Angular and Express JS (not professionally). 
+    </p>
+  </div>
+    <br>
+    <!-- <div class="separator"></div> -->
+   <br>
+   
+
+    <div class="row justify-content-center">
+      <div class="col-sm-8">
+        <div class="row justify-content-center">
+            <div *ngFor="let skill of skills" class="col-6 col-sm-3">
+                <p class="text-center skill">{{skill.name}}</p>
+              </div>
+        </div>
+          
+      </div>
+     
+      
+    </div>
+    <!-- <div class="separator"></div> -->
+
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-8 offset-2">
+<p class="contact">Email: {{email}}</p>
+<p class="contact">Phone: {{phone}}</p>
+      </div>
+    </div>
+    <br>
 </div>
+
 <hr>
 
+
+<!-- PETSONAL PROJECTS -->
 <div class="separator"></div>
-<h1 class="text-center intro">Personal Projects...</h1>
+<h1 class="intro-small">Personal Projects...</h1>
+<hr class="underline">
+
 <br>
 
-      <h3 class="intro"><strong>Projects i have worked on, or am proud to have been a part of </strong></h3><br>
-      <div class="separator"></div>
-      <div class="row">
-            <div *ngFor="let project of projects" class="card" style="width: 18rem;">
-                    <img class="card-img-top" src= {{ project.image }} alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">{{project.name}}</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-      
-      
+  <p class="intro-smaller">Projects I have worked on, or am proud to have been a part of </p><br>
+  <div class="separator"></div>
+  <div class="row">
+      <div *ngFor="let project of projects" class="card" style="width: 18rem;">
+              <img class="card-img-top" src={{project.image}} alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">{{project.name}}</h5>
+                <p class="card-text">{{project.description}}</p>
+                <a href={{project.repo}} class="btn btn-info">Github</a>
+              </div>
       </div>
+  </div>
 
 
 
