@@ -13,6 +13,6 @@ export class HttpService {
   private url = 'https://neelo-43a82.firebaseapp.com/sendEmail';
 
   post(params) {
-    return this.http.post(this.url, params);
+    return this.http.post(this.url, params).pipe();
   }
 }

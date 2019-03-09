@@ -5,6 +5,10 @@
     font-family: lato;
     src: url(assets/fonts/lato/Lato-Hairline.ttf) format("opentype");
   }
+  body {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-text-stroke:1px transparent;
+    }
   .intro{
     font-family: Lato;
     font-weight: 10;
@@ -16,9 +20,11 @@
 }
   .intro-small{
     font-family: Lato;
-    font-weight: 50;
-    font-style: inherit;
-    font-size: 200%
+    /* font-weight: 50; */
+    font-weight: 700;
+    /* font-style: inherit; */
+    font-size: 200%;
+
     
 }
   .intro-smaller{
