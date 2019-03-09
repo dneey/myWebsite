@@ -23,9 +23,11 @@
 }
   .intro-smaller{
     font-family: Lato;
-    font-weight: 100;
+    font-weight: 50;
     font-style: inherit;
-    font-size: 150%
+    font-size: 150%;
+    color: rgba(22, 20, 20, 0.664);
+
     
 }
   .intro-sub{
@@ -34,7 +36,7 @@
     font-style: inherit;
     font-size: 150%;
     /* color: rgba(255, 255, 255, 0.829); */
-    color: rgba(255, 255, 255, 0.808);
+    color: rgba(255, 255, 255, 0.904);
     
 }
   .intro-large{
@@ -68,26 +70,34 @@
 
 .skill{
     font-family: Lato;
-    font-weight: 10;
+    font-weight: 100;
     font-style: inherit;
     font-size: 100%;
     padding:10%;
     color: rgb(255, 255, 255);
-    background-color: rgba(44, 39, 29, 0.322);
+    background-color: rgba(44, 39, 29, 0.041);
     border-radius: 5%;
     margin: 10px;
     padding: 10px;
     /* border-radius: 10px; */
     /* background: #f0f0f0; */
-        line-height: 1.7;
+        /* line-height: 1.7; */
         /* color: #888; */
-        justify-content: center;
+        /* justify-content: center;
         align-items: center;
-        -ms-flex-align: center;
+        -ms-flex-align: center; */
 }
 
 
 .contact {
     color: rgba(255, 255, 255, 0.877);
     font-size: 80%;
+}
+
+.card-text{
+    /* font-family: Lato; */
+    font-weight: 50;
+    font-style: inherit;
+    font-size: 100%;
+    color: rgba(22, 20, 20, 0.664);
 }

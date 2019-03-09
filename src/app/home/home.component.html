@@ -25,8 +25,8 @@
     <div class="row justify-content-center">
       <div class="col-sm-8">
         <div class="row justify-content-center">
-            <div *ngFor="let skill of skills" class="col-6 col-sm-3">
-                <p class="text-center skill">{{skill.name}}</p>
+            <div *ngFor="let skill of skills" class="col-5 col-sm-6 col-md-6 col-lg-3">
+                <p class="text-center skill"><strong>{{skill.name}}</strong></p>
               </div>
         </div>
           
@@ -40,7 +40,7 @@
     <br>
     <br>
     <div class="row">
-      <div class="col-8 offset-2">
+      <div id="contact" class="col-8 offset-2">
 <p class="contact">Email: {{email}}</p>
 <p class="contact">Phone: {{phone}}</p>
       </div>
@@ -48,27 +48,29 @@
     <br>
 </div>
 
-<hr>
+
 
 
 <!-- PETSONAL PROJECTS -->
 <div class="separator"></div>
-<h1 class="intro-small">Personal Projects...</h1>
-<hr class="underline">
+<h1 id="personal" class="intro-small text-center">Personal Projects...</h1>
+<!-- <hr class="underline text-center"> -->
 
-<br>
 
-  <p class="intro-smaller">Projects I have worked on, or am proud to have been a part of </p><br>
-  <div class="separator"></div>
-  <div class="row">
-      <div *ngFor="let project of projects" class="card" style="width: 18rem;">
-              <img class="card-img-top" src={{project.image}} alt="Card image cap">
-              <div class="card-body">
+  <p class="intro-smaller text-center">Projects I have worked on, or am proud to have been a part of.</p><br>
+  
+  <!-- <div class="separator"></div> -->
+  <div class="row justify-content-center">
+      <div *ngFor="let project of projects">
+        <div class="card text-center  bg-light" style="width:100%; margin-left:5px;">
+              <!-- <img class="card-img-top" src={{project.image}} alt="Card image cap"> -->
+              <div class="card-body col-12 col-sm-12 col-md-12">
                 <h5 class="card-title">{{project.name}}</h5>
-                <p class="card-text">{{project.description}}</p>
-                <a href={{project.repo}} class="btn btn-info">Github</a>
+                <p class="card-text lead">{{project.description}}</p>
+                <a href={{project.repo}} class="btn btn-info">View On Github</a>
               </div>
-      </div>
+      </div><br>
+    </div>
   </div>
 
 

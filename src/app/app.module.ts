@@ -21,6 +21,7 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpService } from './http.service';
 import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     ContactComponent,
     SideNavComponent,
-    FooterComponent
+    FooterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

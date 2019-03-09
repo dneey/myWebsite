@@ -29,8 +29,8 @@ export class HomeComponent implements OnInit {
     this.projects = [
       {
         'name': 'Handy Node',
-        'repo': '',
-        'description': 'A mini node js framework with a laravel feel. Its main focus',
+        'repo': 'https://github.com/Deenee/handyNode',
+        'description': 'A mini node js framework with a laravel feel. Its main focus was to help me build apis in node js as quickly as possible.',
         'image': ''
       },
       {

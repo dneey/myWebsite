@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Contact } from '../contact';
 
 @Component({
   selector: 'app-footer',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+contact: any;
 
   constructor() { }
 
   ngOnInit() {
+    const contact = new Contact;
+    this.contact = contact.getContactDetails();
   }
 
 }
