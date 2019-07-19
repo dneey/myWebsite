@@ -1,3 +1,3 @@
 # My Website
 
-Pay me a visit :)
+Feel free to modify this code for your personal needs :)
